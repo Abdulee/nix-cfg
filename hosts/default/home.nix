@@ -32,6 +32,7 @@
       pkgs.mangohud
       pkgs.wineWowPackages.stable pkgs.winetricks pkgs.mono4
       pkgs.droidcam pkgs.obs-studio-plugins.droidcam-obs pkgs.obs-studio pkgs.telegram-desktop pkgs.element-desktop pkgs.syncthing
+      pkgs.imagemagick
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
