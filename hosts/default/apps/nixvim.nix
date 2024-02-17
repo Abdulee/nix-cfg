@@ -44,7 +44,13 @@
                pylsp.enable = true;
                texlab.enable = true;
                nil_ls.enable = true; #nix LSP
+               html.enable = true;
+               cssls.enable = true;
             };
+         };
+         ts-autotag = {
+            enable = true;
+            filetypes = ["html" "xml" "javascript" "typescript"];
          };
       };
 
