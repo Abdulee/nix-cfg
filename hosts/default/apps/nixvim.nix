@@ -43,6 +43,7 @@
                hls.enable = true;
                pylsp.enable = true;
                texlab.enable = true;
+               ltex.enable = true;   #languageTool for markdown, latex etc..
                nil_ls.enable = true; #nix LSP
                html.enable = true;
                cssls.enable = true;
