@@ -173,6 +173,7 @@ home-manager = {
     device = "192.168.1.66:/mnt/mainStorage/shared";
     fsType = "nfs";
     options = [
+    "timeo=100"
     "rw"
     "hard"
     "intr"
