@@ -119,7 +119,7 @@ systemd.sleep.extraConfig = ''
   users.users.klock = {
     isNormalUser = true;
     description = "klock";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "wireshark"];
     shell = pkgs.zsh;
     packages = with pkgs; [
       #obsidian
@@ -140,6 +140,7 @@ systemd.sleep.extraConfig = ''
     ];
   };
 programs.kdeconnect.enable = true;
+programs.wireshark.enable = true;
 
 home-manager = {
     extraSpecialArgs = { inherit inputs; };
