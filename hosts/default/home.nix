@@ -26,7 +26,7 @@
   # environment.
   home.packages = [
       pkgs.gruvbox-gtk-theme pkgs.gruvbox-plus-icons
-      pkgs.gnome.gnome-tweaks pkgs.gnomeExtensions.hibernate-status-button pkgs.gnomeExtensions.tray-icons-reloaded pkgs.gnomeExtensions.gsconnect pkgs.gnomeExtensions.blur-my-shell
+      pkgs.gnome.gnome-tweaks pkgs.gnomeExtensions.hibernate-status-button pkgs.gnomeExtensions.tray-icons-reloaded pkgs.gnomeExtensions.gsconnect pkgs.gnomeExtensions.blur-my-shell pkgs.gnomeExtensions.gtile
       pkgs.pfetch pkgs.qbittorrent pkgs.nextcloud-client
       pkgs.tor-browser
       pkgs.mangohud
