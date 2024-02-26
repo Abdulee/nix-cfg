@@ -43,7 +43,10 @@
                hls.enable = true;
                pylsp.enable = true;
                texlab.enable = true;
-               ltex.enable = true;   #languageTool for markdown, latex etc..
+               ltex = {
+                  enable = true;
+                  settings.language = "es";
+               };
                nil_ls.enable = true; #nix LSP
                html.enable = true;
                cssls.enable = true;
@@ -69,6 +72,7 @@
       {
          "<leader>f" = ":Telescope find_files<CR>";
          "<leader>tt" = ":Neotree<CR>";
+         "<leader>jt" = ":split<CR>:wincmd j<CR><C-W>10-<CR>:terminal<CR>"; #gives me a nice terminal split
       };
       in
          config.nixvim.helpers.keymaps.mkKeymaps
