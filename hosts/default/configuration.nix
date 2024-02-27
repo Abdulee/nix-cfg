@@ -136,7 +136,7 @@ systemd.sleep.extraConfig = ''
       libreoffice texliveFull
       mpv
       lutris discord
-      distrobox podman
+      distrobox podman wireshark
     ];
   };
 programs.kdeconnect.enable = true;
@@ -174,6 +174,7 @@ home-manager = {
     device = "192.168.1.66:/mnt/mainStorage/shared";
     fsType = "nfs";
     options = [
+    "x-systemd.mount-timeout=10"
     "timeo=100"
     "rw"
     "hard"
@@ -200,7 +201,7 @@ home-manager = {
      git
      sbctl niv
      gnat13
-     nfs-utils iperf nmap inetutils
+     nfs-utils iperf nmap inetutils neofetch
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
