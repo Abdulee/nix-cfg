@@ -123,6 +123,7 @@ systemd.sleep.extraConfig = ''
     shell = pkgs.zsh;
     packages = with pkgs; [
       #obsidian
+      neofetch
       tailscale
       android-tools
       alacritty
@@ -137,6 +138,7 @@ systemd.sleep.extraConfig = ''
       mpv
       lutris discord
       distrobox podman wireshark
+      ventoy
     ];
   };
 programs.kdeconnect.enable = true;
@@ -201,7 +203,7 @@ home-manager = {
      git
      sbctl niv
      gnat13
-     nfs-utils iperf nmap inetutils neofetch
+     nfs-utils iperf nmap inetutils
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
