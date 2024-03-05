@@ -34,6 +34,7 @@
       pkgs.droidcam pkgs.obs-studio-plugins.droidcam-obs pkgs.obs-studio pkgs.telegram-desktop pkgs.element-desktop pkgs.syncthing
       pkgs.imagemagick pkgs.gimp
       pkgs.hugo
+      pkgs.kicad-small
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
