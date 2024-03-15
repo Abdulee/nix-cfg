@@ -107,7 +107,9 @@
      enable = true;
      shellAliases = {
         la = "ls -al";
-	update = "sudo nixos-rebuild switch --flake /etc/nixos/#default";
+	     update = "sudo nixos-rebuild switch --flake /etc/nixos/#default";
+        ssh = "TERM=xterm-256color ssh";
+
      };
      initExtra = ''
            [[ ! -f ${/home/klock/.config/home-manager/.p10k.zsh} ]] || source ${/home/klock/.config/home-manager/.p10k.zsh}
