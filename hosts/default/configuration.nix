@@ -202,7 +202,7 @@ home-manager = {
      wget
      git
      sbctl niv
-     gnat13
+     gnat13 gdb ddd
      nfs-utils iperf nmap inetutils
   ];
 
