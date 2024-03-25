@@ -36,6 +36,7 @@
       pkgs.hugo
       pkgs.kicad-small
       pkgs.jetbrains.idea-community
+      pkgs.zola
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
