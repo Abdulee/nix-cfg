@@ -37,6 +37,7 @@
       pkgs.kicad-small
       pkgs.jetbrains.idea-community
       pkgs.zola
+      pkgs.eclipses.eclipse-cpp
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -113,7 +114,7 @@
 
      };
      initExtra = ''
-           [[ ! -f ${/home/klock/.config/home-manager/.p10k.zsh} ]] || source ${/home/klock/.config/home-manager/.p10k.zsh}
+           [[ ! -f ${/home/klock/.config/home-manager/p10k.zsh} ]] || source ${/home/klock/.config/home-manager/p10k.zsh}
      '';
      zplug = {
         enable = true;

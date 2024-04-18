@@ -11,7 +11,7 @@
          register = "unnamedplus";
          providers.wl-copy.enable = true;
       };
-      options = {
+      opts = {
          number = true;
          relativenumber = true;
          tabstop = 3;
@@ -26,11 +26,11 @@
          lightline.colorscheme = "jellybeans";
          treesitter.enable = true;
          telescope.enable = true;
-         coq-nvim = {
-            enable = true;
-            autoStart = "shut-up";
-            installArtifacts = true;
-         };
+#         coq-nvim = {
+#            enable = true;
+#            settings.auto_start = "shut-up";
+#            installArtifacts = true;
+#         };
          neo-tree = {
             enable = true;
             closeIfLastWindow = true;

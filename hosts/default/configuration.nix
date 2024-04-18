@@ -11,8 +11,7 @@
     ];
 
   # Bootloader.
-boot = {
-  loader.systemd-boot.enable = false;
+boot = { loader.systemd-boot.enable = false;
   lanzaboote = {
     enable = true;
     pkiBundle = "/etc/secureboot";
@@ -139,6 +138,7 @@ systemd.sleep.extraConfig = ''
       lutris discord
       distrobox podman wireshark
       ventoy
+      cowsay
     ];
   };
 programs.kdeconnect.enable = true;
@@ -151,24 +151,24 @@ home-manager = {
     };
   };
 
-  services.syncthing = {
-     enable = true;
+#  services.syncthing = {
+#     enable = true;
 
-     overrideFolders = false;
-     overrideDevices = false;
+#     overrideFolders = false;
+#     overrideDevices = false;
 
-     settings = {
-        devices = {
-	   "kaktus" = {id = "2QDXEW5-FIYTHPS-5HOQKYU-6B7JJF2-LYNV6XL-DXY77TV-6QGC7OS-HUHWSQP";};
-	};
-	folders = {
-	   "Notes" = {
-	     path = "/home/klock/Documents/Notes";
-	     devices = [ "kaktus" ];
-	   };
-	};
-     };
-  };
+#     settings = {
+#        devices = {
+#	   "kaktus" = {id = "2QDXEW5-FIYTHPS-5HOQKYU-6B7JJF2-LYNV6XL-DXY77TV-6QGC7OS-HUHWSQP";};
+#	};
+#	folders = {
+#	   "Notes" = {
+#	     path = "/home/klock/Documents/Notes";
+#	     devices = [ "kaktus" ];
+#	   };
+#	};
+#     };
+#  };
 
 
 #Mounting my NFS Share
