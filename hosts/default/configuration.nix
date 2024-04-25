@@ -6,8 +6,7 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+    [ # Include the results of the hardware scan. ./hardware-configuration.nix
     ];
 
   # Bootloader.
@@ -139,6 +138,7 @@ systemd.sleep.extraConfig = ''
       distrobox podman wireshark
       ventoy
       cowsay
+      kdenlive
     ];
   };
 programs.kdeconnect.enable = true;
