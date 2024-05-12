@@ -7,6 +7,7 @@
 {
   imports =
     [ # Include the results of the hardware scan. ./hardware-configuration.nix
+    ./hardware-configuration.nix
     ];
 
   # Bootloader.
@@ -16,6 +17,7 @@ boot = { loader.systemd-boot.enable = false;
     pkiBundle = "/etc/secureboot";
   };
 };
+nixpkgs.hostPlatform = "x86_64-linux";
 
 # suspend to RAM (deep) rather than `s2idle`
 boot.kernelParams = [ "mem_sleep_default=deep" ];
@@ -139,6 +141,7 @@ systemd.sleep.extraConfig = ''
       ventoy
       cowsay
       kdenlive
+      ghostscript_headless
     ];
   };
 programs.kdeconnect.enable = true;

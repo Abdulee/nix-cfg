@@ -38,6 +38,7 @@
       pkgs.jetbrains.idea-community
       pkgs.zola
       pkgs.eclipses.eclipse-cpp
+      pkgs.calibre
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
